@@ -1,0 +1,1 @@
+Q = XY'Z + XYZ' + W'YZ
