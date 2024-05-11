@@ -3,14 +3,14 @@ package _22010310010_SalihaMeryem_Albayrak;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-public class _22010310010_fonksiyon {
+public class fonksiyon {
 	int[] degerler;
 	String fonkAdi;
-	_22010310010_degisken[] degiskenler;
+	degisken[] degiskenler;
 	LinkedList<String> girdi;
 	LinkedList<String> mintermler;
 	LinkedList<String> maxtermler;
-	_22010310010_fonksiyon(String s){
+	fonksiyon(String s){
 		this.fonkAdi=s.charAt(0)+"";
 		this.degiskenler=degiskenOlustur(s);
 		this.girdi=terimAlma(s);
@@ -24,7 +24,7 @@ public class _22010310010_fonksiyon {
 		acikMaxtermYazdirma();
 		kapaliMaxterm();
 	}
-	public void fonkOlusturma(_22010310010_degisken[] degiskenler) {
+	public void fonkOlusturma(degisken[] degiskenler) {
 		int counter=0;
 		for (int i=0;i<2;i++) {
 			degiskenler[0].deger=i;
@@ -99,7 +99,7 @@ public class _22010310010_fonksiyon {
 		tarananTerimler.add(k);
 		return tarananTerimler;
 	}
-	public _22010310010_degisken[] degiskenOlustur(String s) {
+	public degisken[] degiskenOlustur(String s) {
 		
 		String degiskenler="";
 		int d=0;
@@ -115,9 +115,9 @@ public class _22010310010_fonksiyon {
 		}
 		Arrays.sort(dizi);
 		
-		_22010310010_degisken[] degiskenlerListesi =new _22010310010_degisken[4];
+		degisken[] degiskenlerListesi =new degisken[4];
 		for(int i=0;i<4;i++) {
-			_22010310010_degisken degis= new _22010310010_degisken("" +dizi[i]);
+			degisken degis= new degisken("" +dizi[i]);
 			degiskenlerListesi[i]=degis;
 			System.out.print(degis.degiskenAdi+ " ");
 		}
