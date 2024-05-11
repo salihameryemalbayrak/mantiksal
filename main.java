@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _22010310010_main {
+public class main {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		File dosya= new File ("boole.txt");
@@ -13,7 +13,7 @@ public class _22010310010_main {
 		String s=input.nextLine();
 		System.out.println("boole.txt dosyası okundu.");
 		System.out.println("doğruluk tablosu: ");
-		_22010310010_fonksiyon fonk =new _22010310010_fonksiyon(s);
+		fonksiyon fonk =new fonksiyon(s);
 		
 	}
 
