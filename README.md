@@ -15,30 +15,55 @@ c. Boole fonksiyonunun maksterimlerin çarpımı şeklindeki ifadesi (Hem kısa 
 (Örnek bir ekran görüntüsü aşağıda verilmiştir. İnceleyiniz.)
 5. Projenizi yaparken nesneye yönelik programlama tekniğini göz önünde bulundurunuz. Dolayısıyla, projenizde
 belirli sayıda ve uygun şekilde sınıflar ve metotlar tanımlanmalıdır.
+
 Örnek bir ekran görüntüsü aşağıda verilmiştir:
+
 boole.txt dosyası okundu.
+
 doğruluk tablosu:
+
 A B C D F
+
 0 0 0 0 0
+
 0 0 0 1 0
+
 0 0 1 0 0
+
 0 0 1 1 1
+
 0 1 0 0 1
+
 0 1 0 1 0
+
 0 1 1 0 0
+
 0 1 1 1 1
+
 1 0 0 0 1
+
 1 0 0 1 1
+
 1 0 1 0 1
+
 1 0 1 1 1
+
 1 1 0 0 1
+
 1 1 0 1 1
+
 1 1 1 0 1
+
 1 1 1 1 1
+
 Fonksiyon İfadeleri:
+
 F = A’B’CD + A’BC’D’ + A’BCD + AB’C’D’ + AB’C’D + AB’CD’ + AB’CD + ABC’D’ + ABC’D + ABCD’ + ABCD
+
 F = Σ(3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+
 F = (A + B + C + D).(A + B + C + D’).(A + B + C’ + D).(A + B’ + C + D’).(A + B’ + C’ + D)
+
 F = ∏(0, 1, 2, 5, 6)
 
 Örnek bir boole.txt noktası ekte verilmiştir
